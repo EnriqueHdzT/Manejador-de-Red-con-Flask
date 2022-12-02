@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container text-center mt-1">
+        <form action="">
+            <br>
+            <label for="loginCorreo" class="form-label fs-1">Ingrese su Correo</label>
+            <input type="text" name="loginCorreo" id="loginCorreo" placeholder="Correo" class="form-control">
+            <br>
+            <label for="loginContraseña" class="form-label fs-1">Ingrese su Contraseña</label>
+            <input type="password" name="loginContraseña" id="loginContraseña" placeholder="Contraseña" class="form-control">
+            <br>
+            <button type="button" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock content %}
