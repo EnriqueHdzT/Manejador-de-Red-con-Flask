@@ -1,0 +1,27 @@
+Caracteristicas:
+
+    Debe usar SSH para comunicarse con los dispositivos de red.
+    Debe gestionar claves RSA y cifrado de mensajes
+    Debe detectar si existe una cuenta SSH en los dispositivos, en caso de que no pase debe generarse.
+
+Funciones a Realizar:
+
+    Detectar la red de forma dinamica.
+    Generar una representacion grafica de la red.
+    CRUD de usuarios en los dispositivos de red, tanto globalmente como por dispositivo, con gestion de permisos y accesos via SSH
+    Levantamiento de RIP, OSPF o EIGRP dinamicamente
+    Baja de cualquier protocolo con la condicion de que al menos uno se quede activo.
+    Configuracion de SNMPv3 de forma remota.
+    Usando SNMPv3 modificar Nombre del host, descripcion, contacto y localizacion
+    Monitorear datos especificos de trafico usando SNMPv3 en intervalos de tiempo modificables por el usuario (30 segundos por default)
+        Paquetes enviados y recibidos por unidad de tiempo
+        Paquetes dañados por unidad de tiempo
+    Monitorear los paquetes perdidos en un enlace entre dispositivos seleccionados por un intervalo definido por el usuario (30s por default)
+    Presentar graficamente los monitoreos de trafico por interfaces en graficas de linea de tiempo
+    Disparo de alertas a un correo electronico
+        Cuando el porcentaje de paquetes perdidos/t rebase un valor definido
+        Cuando el porcentaje de paquetes dañados/t rebase un valor definido
+        Modificacion de algun dato en un dispositivo de red, de la rama system de la MIB-II
+        Caida o arranque de una interfaz
+        Configuracion de algun dispositivo usando la consola.
+    Esto para cualquier dispositivo, interfaz o enlace segun el administrador.
